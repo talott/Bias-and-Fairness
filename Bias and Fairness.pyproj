@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>705b103c-c671-4a0d-ac2e-a2dd2d3b9e07</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Bias_and_Fairness.py</StartupFile>
+    <StartupFile>IBM.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>Bias and Fairness</Name>
     <RootNamespace>Bias and Fairness</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,6 +24,7 @@
   <ItemGroup>
     <Compile Include="Bias_and_Fairness.py" />
     <Compile Include="features.py" />
+    <Compile Include="IBM.py" />
     <Compile Include="main.py" />
     <Compile Include="model.py" />
     <Compile Include="util.py" />
@@ -30,6 +32,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="data_new.csv" />
+    <Content Include="HospitalMortality.csv" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
